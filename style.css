@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* BACKGROUND*/
+
+.container {
+    height: 100vh;
+    background-image: url('https://media3.giphy.com/media/Wi3ooNvcVtEgo/source.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+/* JAVASCRIPT TEST AREA */
+
+.test-area {
+    width: 70vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+}
+
+/* CALCULATORS */
+
+.calculator-container {
+    background-color: rgb(255, 255, 255, 0.8);
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.screen {
+    background-color: rgb(123, 178, 204);
+    padding: 16px;
+    font-size: 2em;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calculatorButton {
+    margin-top: 16px;
+    background-color: rgb(37, 117, 155);
+    padding: 16px 0;
+    width: 110px;
+    text-align: center;
+}
+
+.numDisplay {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    color: rgb(123, 178, 204);
+    font-size: 1.5em;
+}
+
+/* VISUAL NOVEL GAME */
+
+.invisible {
+  display: none;
+}
+
+.btn-style{
+ background-color: green;
+ width: 200px;
+ color: white;
+ margin: auto;
+ text-align: center;
+ padding: 10px;
+ margin-bottom: 10px;
+ flex-direction: row;
+}
+
+.story-window img{
+  padding-top: 20px;
+  padding-left: 160px;
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.btn-style:hover {
+   box-shadow: 0 0 5px rgb(37, 117, 155);
+   transform: scale(1.1);
+   cursor: pointer;
+}
